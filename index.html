@@ -56,7 +56,7 @@
     <div class="about">
       <div>
         <p>I am a 4th-year Bachelor of Science in Information Technology undergraduate at <strong>National University - Dasmariñas</strong>, specializing in Mobile and Web Applications. I have hands-on academic and project experience building full-stack web and mobile applications using React, Java, PHP, Python, and MySQL.</p>
-        <p>Alongside my technical coursework, I am active in student organizations like the Integrated Society of Information Technology Enthusiasts (iSITE) as an Event Coordinator & Designer, enhancing my collaboration, planning, and UI prototyping skills.</p>
+        <p>Alongside my technical coursework, I was a former active member in student organizations like the Integrated Society of Information Technology Enthusiasts (iSITE) as an Event Coordinator & Designer, enhancing my collaboration, planning, and UI prototyping skills.</p>
         <p>I am currently looking for an <strong>OJT / Internship</strong> opportunity where I can apply my skills to real-world projects, collaborate with engineering teams, and adapt quickly to new technologies.</p>
       </div>
       <ul class="facts">
@@ -85,7 +85,7 @@
   </div>
 </section>
 
-<!-- 4. CERTIFICATIONS (Moved right after Skills) -->
+<!-- 4. CERTIFICATIONS -->
 <section id="certs">
   <div class="wrap">
     <h2>Certifications & Badges</h2>
@@ -146,7 +146,10 @@
           <h3>LIG+AS</h3>
           <p>Disaster Preparedness Web and Mobile Application featuring gamified 3D simulations and an administrative monitoring dashboard.</p>
           <ul class="chips"><li>Unity</li><li>React.js</li><li>Supabase</li><li>Figma</li></ul>
-          <p class="links"><a href="https://github.com/arabeyylla" target="_blank" rel="noopener">GitHub Repository</a></p>
+          <p class="links">
+            <a href="https://ligtas-one.vercel.app/" target="_blank" rel="noopener">Live Demo ↗</a>
+            <a href="https://github.com/arabeyylla/LIG-AS.git" target="_blank" rel="noopener">GitHub Repository ↗</a>
+          </p>
         </div>
         <dl>
           <div><dt>The problem</dt><dd>Communities and students need engaging, realistic tools to learn hazard awareness, emergency decision-making, and evacuation procedures.</dd></div>
@@ -161,7 +164,7 @@
           <h3>Adulting 101 (adulTHINK PH)</h3>
           <p>Mobile application built to provide young adults with essential educational resources, budgeting utilities, and government ID application guidance.</p>
           <ul class="chips"><li>React Native</li><li>React.js</li><li>Supabase</li></ul>
-          <p class="links"><a href="https://github.com/arabeyylla" target="_blank" rel="noopener">GitHub Repository</a></p>
+          <p class="links"><a href="https://github.com/CapellanCZ/adulthinks" target="_blank" rel="noopener">GitHub Repository ↗</a></p>
         </div>
         <dl>
           <div><dt>The problem</dt><dd>Young adults often lack a centralized, easy-to-navigate mobile guide for basic financial literacy and administrative tasks like acquiring government credentials.</dd></div>
@@ -199,7 +202,7 @@
   const m={x:-999,y:-999,gx:-999,gy:-999};let W,H,P=[];
   const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
   function size(){const d=devicePixelRatio||1;W=innerWidth;H=innerHeight;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);
-    const n=Math.round(Math.min(46,W*H/26000));P=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:0,vy:-(.15+Math.random()*.4),
+    const n=Math.round(Math.min(46,W*H/26000));P=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:0,vy:-(.15+Math.random()*4),
       s:14+Math.random()*22,r:Math.random()*6.28,vr:(Math.random()-.5)*.01,g:G[Math.random()*G.length|0],c:C[Math.random()*2|0],a:.14+Math.random()*.2}))}
   addEventListener('resize',size);
   addEventListener('pointermove',e=>{m.x=e.clientX;m.y=e.clientY});
